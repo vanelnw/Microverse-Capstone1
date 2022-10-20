@@ -11,17 +11,19 @@ For this repository, I've created html templates, styling and javascript files i
 - Git & Github
 
 ## Video Link
+
 https://www.loom.com/share/5b659f0b69e3420084d0c727c94004ba
 
-## Live Demo 
+## Live Demo
 
-[Live Demo Link](https://vanelnw.github.io/)
+[Live Demo Link](https://vanelnw.github.io/Microverse-Capstone1/)
 
 ### Install
 
 To get a local copy up and running follow these simple example steps.
+
 - Open terminal
-- Clone this project by the command: 
+- Clone this project by the command:
 
 $ git clone https://github.com/vanelnw/Microverse-Capstone1.git
 
