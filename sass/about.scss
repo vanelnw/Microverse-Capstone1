@@ -53,11 +53,13 @@ $lato: lato, sans-serif;
 
 .home-comtact {
   @include flex-column;
+
   gap: 5px;
 }
 
 .about {
   @include flex-column;
+
   gap: 50px;
   height: 80%;
   padding: 5px;
@@ -140,6 +142,7 @@ $lato: lato, sans-serif;
 
   .last-submit {
     @include flex-column;
+
     gap: 30px;
     width: 80%;
     height: 250px;
@@ -155,6 +158,7 @@ $lato: lato, sans-serif;
 
     .depart {
       @include flex-column;
+
       background-color: rgba(255, 0, 0, 0.4);
       position: absolute;
       top: 0;

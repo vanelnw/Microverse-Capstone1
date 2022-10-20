@@ -19,10 +19,12 @@
 .home-content {
   text-align: center;
 }
+
 .home-content h1 {
   text-align: justify;
   font-size: 30px;
 }
+
 .home-content div {
   background-color: #fff;
   border: 1px solid #d3d3d3;
@@ -46,10 +48,12 @@
   height: 80%;
   padding: 5px;
 }
+
 .about h1 {
   text-align: center;
   color: #070f82;
 }
+
 .about .about-desc {
   width: 90%;
   border: 2px solid #d3d3d3;
@@ -59,11 +63,13 @@
   line-height: 20px;
   letter-spacing: 1.2px;
 }
+
 .about .about-contact {
   text-align: center;
   line-height: 20px;
   letter-spacing: 1.2px;
 }
+
 @media screen and (min-width: 768px) {
   .about .about-desc {
     width: 50%;
@@ -74,14 +80,17 @@
   padding: 30px 15px;
   text-align: center;
 }
+
 .about-logo .title > span {
   color: #272a31;
   text-align: center;
 }
+
 .about-logo .title > span::after {
   top: 35px;
   left: 30%;
 }
+
 .about-logo .logo {
   display: flex;
   justify-content: center;
@@ -91,6 +100,7 @@
   padding: 15px 0;
   width: 60%;
 }
+
 .about-logo .logo img {
   width: 20%;
   height: 20%;
@@ -102,16 +112,20 @@
   padding: 30px 15px;
   text-align: center;
 }
+
 .about-past p {
   width: 80%;
 }
+
 .about-past .title {
   color: #272a31;
 }
+
 .about-past .title > span::after {
   top: 35px;
   left: 43%;
 }
+
 .about-past .last-submit {
   display: flex;
   flex-direction: column;
@@ -124,11 +138,13 @@
   font-size: 24px;
   position: relative;
 }
+
 .about-past .last-submit img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
+
 .about-past .last-submit .depart {
   display: flex;
   flex-direction: column;
@@ -142,10 +158,12 @@
   height: 100%;
   gap: 20px;
 }
+
 .about-past .last-submit .year {
   font-size: 32px;
   font-weight: 900;
 }
+
 @media screen and (min-width: 768px) {
   .about-past .last-submit {
     width: 45%;
@@ -156,5 +174,3 @@
   background-color: #272a31;
   color: #fff;
 }
-
-/*# sourceMappingURL=about.css.map */

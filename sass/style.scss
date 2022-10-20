@@ -376,12 +376,12 @@ body {
     background-color: rgba(255, 255, 255, 0.1);
 
     .program-item-img {
-        @include flex-row;
-        gap: 25px;
-        flex: 1;
-        
-       text-align: center;
-        
+      @include flex-row;
+
+      gap: 25px;
+      flex: 1;
+      text-align: center;
+
       img {
         object-fit: cover;
         width: 50px;
@@ -389,12 +389,12 @@ body {
       }
 
       .program-item-speciality {
-      color: $orange-color;
-    }
+        color: $orange-color;
+      }
     }
 
     .program-item-text {
-        flex: 2;
+      flex: 2;
       color: #fff;
       text-align: justify;
     }
@@ -422,9 +422,9 @@ body {
       gap: 10px;
       width: 20%;
 
-       .program-item-img {
+      .program-item-img {
         flex-direction: column;
-       }
+      }
     }
   }
 }
@@ -449,7 +449,7 @@ body {
     width: 100%;
     font-weight: 400;
 
-    img {
+    .speaker-item-img {
       width: 120px;
       height: 120px;
       object-fit: cover;
@@ -512,7 +512,7 @@ body {
     flex-wrap: wrap;
     gap: 30px;
 
-    img {
+    .partner-img {
       width: 100px;
       height: 50px;
       filter: grayscale(100%);
@@ -530,7 +530,7 @@ body {
     flex: 1;
     padding-left: 5%;
 
-    img {
+    .foot-img {
       height: 80px;
       width: 200px;
     }
