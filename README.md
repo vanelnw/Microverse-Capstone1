@@ -54,6 +54,10 @@ Contributions, issues, and feature requests are welcome!
 
 Feel free to check the [issues page](../../issues/).
 
+## Contributors ✨
+
+Thanks go to this wonderful person, [Cindy Shin in Behance](https://www.behance.net/adagio07) who create the ooriginal design of this project.
+
 ## Show your support
 
 Give a ⭐️ if you like this project!
