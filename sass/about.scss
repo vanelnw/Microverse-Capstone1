@@ -75,6 +75,7 @@ $lato: lato, sans-serif;
     }
 
     h1 {
+      font-family: COCOGOOSE, sans-serif;
       font-weight: 900;
     }
   }
@@ -191,9 +192,20 @@ $lato: lato, sans-serif;
   }
 }
 
+.partners {
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+
 .footer {
   @include flex-row;
 
-  background-color: #272a31;
-  color: #fff;
+  background-color: #fff;
+  color: $black-color;
+
+  @media screen and (min-width: 768px) {
+    background-color: $black-color;
+    color: #fff;
+  }
 }

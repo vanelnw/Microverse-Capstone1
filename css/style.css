@@ -137,11 +137,12 @@ body {
 }
 
 #home .home-content span {
-  font-weight: 300;
+  font-weight: 400;
   font-size: 18px;
 }
 
 #home .home-content h1 {
+  font-family: COCOGOOSE, sans-serif;
   margin-top: 10px;
   font-size: 30px;
   font-weight: 900;
