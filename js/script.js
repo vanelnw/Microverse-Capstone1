@@ -40,7 +40,7 @@ const speakers = [
     name: 'Dr. Paul Ford',
     organization: 'Cardiac Surgeon',
     description:
-      "By developing Asia's first Internet protocol network SDN and leading Korea's first private line Internet connection in 1990, it ushered in the era of the Internet in earnest.",
+      "By developing Asia's first Internet protocol network SDN and leading Korea's first private line Internet connection in 1990.",
   },
 
   {
@@ -48,7 +48,7 @@ const speakers = [
     name: 'Dr. Sarah Snow',
     organization: 'Pediatrician',
     description:
-      "Layla Tretikov is the general secretary of the Wikimedia Foundation, a non-profit organization that runs Wikipedia. Wikipedia is provided free of charge in 290 languages ​​every month to over 100 million people, nearly half of the world's population.",
+      'Layla Tretikov is the general secretary of the Wikimedia Foundation, a non-profit organization that runs Wikipedia. Wikipedia is provided free of charge in 290 languages ​.',
   },
   {
     image: './assets/doctor4.jpg',
@@ -66,8 +66,6 @@ const speakers = [
       'He led open source projects at the Mozilla Foundation and joined CC as CEO in 2014. He has been active in open movements such as open government and open source.',
   },
 ];
-
-const showSpeakers = [speakers[0], speakers[1]];
 
 const body = document.querySelector('body');
 const speakersSection = document.createElement('div');
@@ -87,34 +85,34 @@ function AppendSpeakerItem(Speakers) {
     const speakerItem = document.createElement('div');
     speakerItem.setAttribute('class', 'speaker-item');
     speakerItem.innerHTML = `<img class="speaker-item-img" src=${element.image} alt="speaker1" />
-
-          <h4 class="speaker-name">${element.name}</h4>
+<div class="speaker-item-info">
+<h4 class="speaker-name">${element.name}</h4>
           <p class="speaker-organize">${element.organization}</p>
           <hr />
           <p class="speaker-desc">
            ${element.description}
-          </p>`;
+          </p>
+</div>
+          `;
 
     speakersSectionContent.append(speakerItem);
   }
 }
 
-AppendSpeakerItem(showSpeakers);
+AppendSpeakerItem(speakers);
 
 const morebtn = document.createElement('a');
 morebtn.setAttribute('class', 'more-btn');
 morebtn.innerText = 'more';
 
 morebtn.addEventListener('click', () => {
-  const NewSpeakers = speakers.filter(
-    (x) => speakers.indexOf(x) >= showSpeakers.length
-      && speakers.indexOf(x) <= showSpeakers.length + 1,
-  );
-  AppendSpeakerItem(NewSpeakers);
+  const content = document.querySelector('.speakers-content');
 
-  showSpeakers.push(...NewSpeakers);
+  const h = content.offsetHeight;
 
-  if (showSpeakers.length === speakers.length) {
+  speakersSectionContent.style.maxHeight = `${h * 2}px`;
+
+  if (content.offsetHeight >= 1100) {
     morebtn.classList.add('more-btn-none');
   }
 });
