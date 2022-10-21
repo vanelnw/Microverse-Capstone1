@@ -47,7 +47,7 @@ body {
 #home {
   width: 100%;
   height: 100vh;
-  background-image: url("../assets/medicine-concept-bg.jpg");
+  background-image: url("../assets/bg2.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -60,10 +60,11 @@ body {
   display: flex;
   justify-content: end;
   width: 100%;
-  padding: 10px 50px;
+  padding: 5px 50px;
+  font-size: 12px;
   gap: 20px;
   color: #fff;
-  background-color: #070f82;
+  background-color: #272a31;
 }
 
 #home .home-top .top-content > * {
@@ -105,7 +106,8 @@ body {
 
 #home .toolBar .compain-btn {
   margin-left: 50px;
-  border: 4px solid #070f82;
+  border: 4px solid #ec5242;
+  color: #ec5242;
   padding: 5px 15px;
   font-weight: 300;
   height: 50%;
@@ -122,52 +124,38 @@ body {
   padding: 0 3%;
   margin-top: 40px;
   height: 85%;
+  gap: 50px;
 }
 
 #home .home-content div {
-  text-align: center;
+  text-align: start;
 }
 
 #home .home-content span,
 #home .home-content h1 {
-  color: #070f82;
+  color: #ec5242;
 }
 
 #home .home-content span {
   font-weight: 300;
+  font-size: 18px;
 }
 
 #home .home-content h1 {
-  font-size: 20px;
-}
-
-#home .home-content .home-care {
-  width: 100%;
-  height: 83%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-
-#home .home-content .home-care .home-doctor {
-  width: 100%;
-  height: 40%;
-  object-fit: scale-down;
-  order: 0;
+  margin-top: 10px;
+  font-size: 30px;
+  font-weight: 900;
 }
 
 #home .home-content .home-care-inner {
-  order: 1;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   font-weight: 300;
-  background-color: #fff;
   width: 100%;
-  height: 50%;
   position: relative;
-  gap: 10px;
+  gap: 50px;
   z-index: 0;
 }
 
@@ -215,16 +203,18 @@ body {
 }
 
 #home .home-content .home-care-bottom {
-  background-color: #070f82;
-  color: #fff;
+  border: 5px solid #fff;
+  background-color: #d3d3d3;
+  color: #272a31;
+  font-weight: 500;
   padding: 20px 30px;
-  border-radius: 15px;
   position: relative;
 }
 
 #home .home-content .home-care-bottom p {
   padding: 10px 20px;
   background-color: green;
+  color: #fff;
   border-radius: 30px;
   text-align: center;
   position: absolute;
@@ -264,34 +254,31 @@ body {
     gap: 30px;
   }
 
+  #home .toolBar nav .nav-item {
+    cursor: pointer;
+    color: #272a31;
+  }
+
+  #home .toolBar nav .nav-item:hover,
+  #home .toolBar nav .nav-item:active {
+    color: #ec5242;
+  }
+
   #home .toolBar .compain-btn {
     display: block;
   }
 
   #home .home-content {
-    padding: 0 5%;
-    height: 80vh;
-    justify-content: space-between;
+    padding: 0 10%;
+    align-items: flex-start;
   }
 
   #home .home-content h1 {
-    font-size: 30px;
+    font-size: 40px;
   }
 
-  #home .home-content .home-care {
-    height: 79%;
-  }
-
-  #home .home-content .home-care .home-doctor {
-    order: 1;
-    width: 40%;
-    height: 99%;
-    object-fit: cover;
-  }
-
-  #home .home-content .home-care-inner {
-    order: 0;
-    width: 40%;
+  #home .home-content .home-care-inner .home-care-top {
+    width: 50%;
   }
 }
 
@@ -402,9 +389,10 @@ body {
 .program .program-join {
   display: block;
   width: fit-content;
-  font-weight: 300;
+  font-weight: 400;
+  background-color: #ec5242;
   margin-bottom: 2px;
-  text-decoration: underline;
+  padding: 15px 20px;
   color: #fff;
   cursor: pointer;
 }
@@ -436,18 +424,23 @@ body {
 
 .speakers .speakers-content {
   gap: 40px;
+  overflow: hidden;
+  max-height: 350px;
 }
 
 .speakers .speaker-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100%;
   font-weight: 400;
+  max-height: 200px;
 }
 
 .speakers .speaker-item .speaker-item-img {
   width: 120px;
-  height: 120px;
+  height: 150px;
   object-fit: cover;
-  float: left;
   margin-right: 10px;
 }
 
@@ -477,12 +470,16 @@ body {
 }
 
 @media screen and (min-width: 768px) {
+  .speakers .speakers-content {
+    max-height: 700px;
+  }
+
   .speakers .speaker-item {
     width: 40%;
   }
 
   .speakers .more-btn {
-    width: 50%;
+    display: none;
   }
 }
 
@@ -515,11 +512,9 @@ body {
 }
 
 .footer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: none;
   width: 100%;
-  padding: 40px 0;
+  padding: 30px 0;
 }
 
 .footer .footer-img {
@@ -529,10 +524,18 @@ body {
 
 .footer .footer-img .foot-img {
   height: 80px;
-  width: 200px;
+  width: 100px;
 }
 
 .footer .footer-text {
   flex: 1;
   font-weight: 400;
+}
+
+@media screen and (min-width: 768px) {
+  .footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }

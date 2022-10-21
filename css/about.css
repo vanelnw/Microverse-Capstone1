@@ -44,14 +44,24 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 50px;
-  height: 80%;
+  gap: 30px;
+  height: 90%;
   padding: 5px;
 }
 
-.about h1 {
+.about .about-titles {
   text-align: center;
-  color: #070f82;
+  color: #ec5242;
+}
+
+.about .about-titles h4 {
+  font-weight: 400;
+  line-height: 12px;
+  margin-bottom: 20px;
+}
+
+.about .about-titles h1 {
+  font-weight: 900;
 }
 
 .about .about-desc {
@@ -114,7 +124,7 @@
 }
 
 .about-past p {
-  width: 80%;
+  width: 90%;
 }
 
 .about-past .title {
@@ -132,10 +142,10 @@
   justify-content: center;
   align-items: center;
   gap: 30px;
-  width: 80%;
+  width: 90%;
   height: 250px;
   color: #fff;
-  font-size: 24px;
+  font-size: 20px;
   position: relative;
 }
 
@@ -171,6 +181,9 @@
 }
 
 .footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: #272a31;
   color: #fff;
 }
