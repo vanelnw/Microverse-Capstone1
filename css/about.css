@@ -16,8 +16,8 @@
   background-size: cover;
 }
 
-#home .toolBar nav .nav-item .about {
-    color: #ec5242;
+#home .toolBar nav .nav-item .about-link {
+  color: #ec5242;
 }
 
 .home-content {
