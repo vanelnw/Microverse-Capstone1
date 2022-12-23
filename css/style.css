@@ -255,12 +255,13 @@ body {
     gap: 30px;
   }
 
-  #home .toolBar nav .nav-item {
+  #home .toolBar nav .nav-item a{
     cursor: pointer;
     color: #272a31;
+    text-decoration: none;
   }
 
-  #home .toolBar nav .nav-item:hover,
+  #home .toolBar nav .nav-item a:hover,
   #home .toolBar nav .nav-item:active {
     color: #ec5242;
   }
@@ -315,7 +316,7 @@ body {
     list-style-type: none;
   }
 
-  #home .toolBar nav .nav-item {
+  #home .toolBar nav .nav-item{
     width: 100%;
     padding: 15px 0;
     border-bottom: 1px solid #d3d3d3;

@@ -16,6 +16,10 @@
   background-size: cover;
 }
 
+#home .toolBar nav .nav-item .about {
+    color: #ec5242;
+}
+
 .home-content {
   text-align: center;
 }
