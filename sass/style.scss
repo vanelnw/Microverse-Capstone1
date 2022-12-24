@@ -61,30 +61,11 @@ body {
   }
 }
 
-#home {
-  width: 100%;
-  height: 100vh;
-  background-image: url("../assets/bg2.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
+// header
 
-  .home-top {
+header {
+  .top-content {
     display: none;
-  }
-
-  .home-top .top-content {
-    display: flex;
-    justify-content: end;
-    width: 100%;
-    padding: 5px 50px;
-    font-size: 12px;
-    gap: 20px;
-    color: #fff;
-    background-color: $black-color;
-  }
-
-  .home-top .top-content > * {
-    cursor: pointer;
   }
 
   .toolBar {
@@ -132,111 +113,20 @@ body {
     }
   }
 
-  .home-content {
-    @include flex-column;
-
-    padding: 0 3%;
-    margin-top: 40px;
-    height: 85%;
-    gap: 50px;
-
-    div {
-      text-align: start;
-    }
-
-    span,
-    h1 {
-      color: $orange-color;
-    }
-
-    span {
-      font-weight: 400;
-      font-size: 18px;
-    }
-
-    h1 {
-      font-family: COCOGOOSE, sans-serif;
-      margin-top: 10px;
-      font-size: 30px;
-      font-weight: 900;
-    }
-
-    .home-care-inner {
-      @include flex-column;
-
-      font-weight: 300;
-      width: 100%;
-      position: relative;
-      gap: 50px;
-      z-index: 0;
-
-      .home-care-top {
-        position: relative;
-        padding: 10px;
-        width: 100%;
-      }
-
-      .quote1 {
-        position: absolute;
-        left: 0;
-        color: green;
-        font-size: 30px;
-        font-weight: 900;
-      }
-
-      .we-care {
-        padding: 20px;
-        text-align: center;
-
-        h2 {
-          line-height: 30px;
-          letter-spacing: 10px;
-        }
-
-        h4 {
-          line-height: 30px;
-          letter-spacing: 10px;
-        }
-
-        h6 {
-          line-height: 30px;
-          letter-spacing: 10px;
-        }
-      }
-
-      .quote2 {
-        position: absolute;
-        bottom: 0;
-        right: 0;
-        color: #070f82;
-        font-size: 30px;
-        font-weight: 900;
-      }
-    }
-
-    .home-care-bottom {
-      border: 5px solid #fff;
-      background-color: $grey-color;
-      color: $black-color;
-      font-weight: 500;
-      padding: 20px 30px;
-      position: relative;
-
-      p {
-        padding: 10px 20px;
-        background-color: green;
-        color: #fff;
-        border-radius: 30px;
-        text-align: center;
-        position: absolute;
-        top: -20px;
-      }
-    }
-  }
-
   @media screen and (min-width: 768px) {
-    .home-top {
-      display: block;
+    .top-content {
+      display: flex;
+      justify-content: end;
+      width: 100%;
+      padding: 5px 50px;
+      font-size: 12px;
+      gap: 20px;
+      color: #fff;
+      background-color: $black-color;
+    }
+
+    .top-content > * {
+      cursor: pointer;
     }
 
     .toolBar {
@@ -262,34 +152,24 @@ body {
           gap: 30px;
         }
 
-        .nav-item {
+        .nav-item a {
           cursor: pointer;
+          text-decoration: none;
           color: $black-color;
         }
 
-        .nav-item:hover,
-        .nav-item:active {
+        .nav-item .about-link {
+          color: $orange-color;
+        }
+
+        .nav-item a:hover,
+        .nav-item a:active {
           color: $orange-color;
         }
       }
 
       .compain-btn {
         display: block;
-      }
-    }
-
-    .home-content {
-      padding: 0 10%;
-      align-items: flex-start;
-
-      h1 {
-        font-size: 40px;
-      }
-
-      .home-care-inner {
-        .home-care-top {
-          width: 50%;
-        }
       }
     }
   }
@@ -326,7 +206,16 @@ body {
           width: 100%;
           padding: 15px 0;
           border-bottom: 1px solid $grey-color;
+        }
+
+        .nav-item a {
+          cursor: pointer;
+          text-decoration: none;
           color: #fff;
+        }
+
+        .nav-item .about-link {
+          color: $orange-color;
         }
 
         .close-menu {
@@ -339,6 +228,128 @@ body {
 
       .nav-show {
         transform: translateY(0);
+      }
+    }
+  }
+}
+
+// Here section
+
+.hero {
+  @include flex-column;
+
+  width: 100%;
+  height: 90vh;
+  background-image: url("../assets/bg2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 0 3%;
+  gap: 50px;
+
+  div {
+    text-align: start;
+  }
+
+  span,
+  h1 {
+    color: $orange-color;
+  }
+
+  span {
+    font-weight: 400;
+    font-size: 18px;
+  }
+
+  h1 {
+    font-family: COCOGOOSE, sans-serif;
+    margin-top: 10px;
+    font-size: 30px;
+    font-weight: 900;
+  }
+
+  .home-care-inner {
+    @include flex-column;
+
+    font-weight: 300;
+    width: 100%;
+    position: relative;
+    gap: 50px;
+    z-index: 0;
+
+    .home-care-top {
+      position: relative;
+      padding: 10px;
+      width: 100%;
+    }
+
+    .quote1 {
+      position: absolute;
+      left: 0;
+      color: green;
+      font-size: 30px;
+      font-weight: 900;
+    }
+
+    .we-care {
+      padding: 20px;
+      text-align: center;
+
+      h2 {
+        line-height: 30px;
+        letter-spacing: 10px;
+      }
+
+      h4 {
+        line-height: 30px;
+        letter-spacing: 10px;
+      }
+
+      h6 {
+        line-height: 30px;
+        letter-spacing: 10px;
+      }
+    }
+
+    .quote2 {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      color: #070f82;
+      font-size: 30px;
+      font-weight: 900;
+    }
+  }
+
+  .home-care-bottom {
+    border: 5px solid #fff;
+    background-color: $grey-color;
+    color: $black-color;
+    font-weight: 500;
+    padding: 20px 30px;
+    position: relative;
+
+    p {
+      padding: 10px 20px;
+      background-color: green;
+      color: #fff;
+      border-radius: 30px;
+      text-align: center;
+      position: absolute;
+      top: -20px;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    padding: 0 10%;
+    align-items: flex-start;
+
+    h1 {
+      font-size: 40px;
+    }
+
+    .home-care-inner {
+      .home-care-top {
+        width: 50%;
       }
     }
   }
@@ -419,32 +430,32 @@ body {
   }
 }
 
-.speakers {
+.doctors {
   padding: 30px 15px;
 
-  .speakers-title {
+  .doctors-title {
     color: rgb(36, 35, 35);
   }
 
-  .speakers-title > span::after {
+  .doctors-title > span::after {
     top: 30px;
     left: 30%;
   }
 
-  .speakers-content {
+  .doctors-content {
     gap: 40px;
     overflow: hidden;
     max-height: 350px;
   }
 
-  .speaker-item {
+  .doctor-item {
     @include flex-row;
 
     width: 100%;
     font-weight: 400;
     max-height: 200px;
 
-    .speaker-item-img {
+    .doctor-item-img {
       width: 120px;
       height: 150px;
       object-fit: cover;
@@ -452,7 +463,7 @@ body {
     }
   }
 
-  .speaker-organize {
+  .doctor-organize {
     color: $orange-color;
     margin-top: 10px;
   }
@@ -477,11 +488,11 @@ body {
   }
 
   @media screen and (min-width: 768px) {
-    .speakers-content {
+    .doctors-content {
       max-height: 700px;
     }
 
-    .speaker-item {
+    .doctor-item {
       width: 40%;
     }
 
@@ -490,6 +501,8 @@ body {
     }
   }
 }
+
+// Patterns section
 
 .partners {
   padding: 40px 15px;
@@ -517,6 +530,8 @@ body {
     }
   }
 }
+
+// Footer section
 
 .footer {
   display: none;

@@ -1,26 +1,4 @@
-const closeMenu = document.querySelector('.close-menu');
-const nav = document.querySelector('nav');
-const burgerMenu = document.querySelector('.mobile-menu');
-
-function toggleMenu() {
-  nav.classList.toggle('nav-show');
-}
-
-if (burgerMenu) {
-  burgerMenu.addEventListener('click', toggleMenu);
-}
-
-if (closeMenu) {
-  closeMenu.addEventListener('click', toggleMenu);
-}
-
-document.addEventListener('click', (e) => {
-  if (e.target.classList.contains('nav-item')) {
-    toggleMenu();
-  }
-});
-
-const speakers = [
+const doctors = [
   {
     image: './assets/doctor1.jpg',
     name: 'Dr.Tom Stewart',
@@ -67,57 +45,78 @@ const speakers = [
   },
 ];
 
-const body = document.querySelector('body');
-const speakersSection = document.createElement('div');
+const closeMenuButton = document.querySelector('.close-menu');
+const nav = document.querySelector('nav');
+const burgerMenuButton = document.querySelector('.mobile-menu');
 
-speakersSection.setAttribute('class', 'section speakers');
-
-const speakersSectionTitle = document.createElement('div');
-speakersSectionTitle.setAttribute('class', 'title speakers-title');
-speakersSectionTitle.innerHTML = '<span>Featred speakers</span>';
-
-const speakersSectionContent = document.createElement('div');
-speakersSectionContent.setAttribute('class', 'content speakers-content');
-
-function AppendSpeakerItem(Speakers) {
-  // eslint-disable-next-line no-restricted-syntax
-  for (const element of Speakers) {
-    const speakerItem = document.createElement('div');
-    speakerItem.setAttribute('class', 'speaker-item');
-    speakerItem.innerHTML = `<img class="speaker-item-img" src=${element.image} alt="speaker1" />
-<div class="speaker-item-info">
-<h4 class="speaker-name">${element.name}</h4>
-          <p class="speaker-organize">${element.organization}</p>
-          <hr />
-          <p class="speaker-desc">
-           ${element.description}
-          </p>
-</div>
-          `;
-
-    speakersSectionContent.append(speakerItem);
-  }
+function toggleMenu() {
+  nav.classList.toggle('nav-show');
 }
 
-AppendSpeakerItem(speakers);
+if (burgerMenuButton) {
+  burgerMenuButton.addEventListener('click', toggleMenu);
+}
 
-const morebtn = document.createElement('a');
-morebtn.setAttribute('class', 'more-btn');
-morebtn.innerText = 'more';
+if (closeMenuButton) {
+  closeMenuButton.addEventListener('click', toggleMenu);
+}
 
-morebtn.addEventListener('click', () => {
-  const content = document.querySelector('.speakers-content');
-
-  const h = content.offsetHeight;
-
-  speakersSectionContent.style.maxHeight = `${h * 2}px`;
-
-  if (content.offsetHeight >= 1100) {
-    morebtn.classList.add('more-btn-none');
+document.addEventListener('click', (event) => {
+  if (event.target.classList.contains('nav-item')) {
+    toggleMenu();
   }
 });
 
-speakersSection.append(speakersSectionTitle);
-speakersSection.append(speakersSectionContent);
-speakersSection.append(morebtn);
-body.insertBefore(speakersSection, body.children[2]);
+const doctorsSection = document.querySelector('.doctors');
+
+const doctorsSectionTitle = document.createElement('div');
+doctorsSectionTitle.classList.add('title', 'doctors-title');
+doctorsSectionTitle.innerHTML = '<span>Our doctors</span>';
+
+const doctorsSectionContent = document.createElement('div');
+doctorsSectionContent.classList.add('content', 'doctors-content');
+
+function createDoctorItem(doctor) {
+  const doctorItem = document.createElement('div');
+  doctorItem.classList.add('doctor-item');
+  doctorItem.innerHTML = `
+    <img class="doctor-item-img" src=${doctor.image} alt="doctor" />
+    <div class="doctor-item-info">
+      <h4 class="doctor-name">${doctor.name}</h4>
+      <p class="doctor-organize">${doctor.organization}</p>
+      <hr />
+      <p class="doctor-desc">${doctor.description}</p>
+    </div>
+  `;
+  return doctorItem;
+}
+
+function appendDoctorItems(doctors) {
+  if (!Array.isArray(doctors) || !doctors.length) {
+    return;
+  }
+  doctors.forEach((doctor) => {
+    const doctorItem = createDoctorItem(doctor);
+    doctorsSectionContent.append(doctorItem);
+  });
+}
+
+appendDoctorItems(doctors);
+
+const moreButton = document.createElement('a');
+moreButton.setAttribute('class', 'more-btn');
+moreButton.innerText = 'more';
+
+moreButton.addEventListener('click', () => {
+  const content = document.querySelector('.doctors-content');
+  const h = content.offsetHeight;
+  doctorsSectionContent.style.maxHeight = `${h * 2}px`;
+
+  if (content.offsetHeight >= 1100) {
+    moreButton.classList.add('more-btn-none');
+  }
+});
+
+doctorsSection.append(doctorsSectionTitle);
+doctorsSection.append(doctorsSectionContent);
+doctorsSection.append(moreButton);
