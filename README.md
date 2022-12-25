@@ -47,8 +47,8 @@ $ cd Microverse-Capstone1
 
 👤 **Nwaba Vanel**
 
-- GitHub: [@githubhandle](https://github.com/vanelnw)
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/va-nw)
+- GitHub: [@vanelnw](https://github.com/vanelnw)
+- LinkedIn: [@va-nw](https://www.linkedin.com/in/va-nw)
 
 ## 🤝 Contributing
 
