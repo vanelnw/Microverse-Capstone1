@@ -1,6 +1,6 @@
 # Microverse-Capstone1
 
-For this repository, I've created html templates, styling and javascript files in order to built a Capstone project, which is an Medical Apointment website.
+In this repository, I've created html templates, styling and javascript files in order to built a Capstone project, which is an Medical Apointment website.
 
 ## Built With
 
