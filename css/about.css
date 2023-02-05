@@ -31,21 +31,29 @@
   font-weight: 400;
   line-height: 12px;
   margin-bottom: 20px;
+  font-size: 20px;
 }
 
 .about .about-titles h1 {
   font-family: COCOGOOSE, sans-serif;
   font-weight: 900;
+  margin-top: 1rem;
+  font-size: 35px;
+  font-weight: 800;
+  line-height: 45px;
+  color: #ec5242;
 }
 
 .about .about-desc {
   width: 90%;
-  border: 2px solid #d3d3d3;
-  padding: 15px;
-  text-align: justify;
-  background-color: #fff;
-  line-height: 20px;
-  letter-spacing: 1.2px;
+  margin: 20px 10px;
+  padding: 8px;
+  border: 0.5px solid rgb(235, 225, 225);
+  background-color: white;
+  color: #545964;
+  text-align: center;
+  font-size: 0.8rem;
+  line-height: 1.5;
 }
 
 .about .about-contact {
@@ -57,6 +65,10 @@
 @media screen and (min-width: 768px) {
   .about .about-desc {
     width: 50%;
+    margin: 30px 10px;
+    padding: 20px;
+    font-size: 1rem;
+    line-height: 1.5;
   }
 }
 

@@ -1,3 +1,14 @@
+:root {
+  --primary: #ec5242;
+  --secondary: #272a31;
+  --tertiary: #d3d3d3;
+  --background: #f7f7f9;
+  --dark-text: #515151;
+  --bg-white: #fff;
+  --color-white: #fff;
+}
+
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -5,10 +16,62 @@
 }
 
 body {
-  font-family: lato, sans-serif;
+  font-family: "Lato", sans-serif;
   font-style: normal;
-  font-weight: 100;
+  font-style: normal;
+  position: relative;
+  background-color: #f7f7f9;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-weight: normal;
 }
+
+@font-face {
+  font-family: cocogoose;
+  src: url(../fonts/Cocogoose.otf);
+  font-weight: bold;
+}
+
+.ff-2 {
+  font-family: "Cocogoose", sans-serif;
+}
+
+.bg {
+  background-color: var(--background);
+}
+
+.color-tertiary {
+  color: var(--tertiary);
+}
+
+.color-primary {
+  color: var(--primary);
+}
+
+.color-secondry {
+  color: var(--secondary);
+}
+
+.bg-primary {
+  background-color: var(--primary);
+}
+
+.color-white-text {
+  color: var(--color-white);
+}
+
+.bg-white {
+  background-color: var(--color-white);
+}
+
+.color-dark-text {
+  color: var(--dark-text);
+}
+
+.bg-dark {
+  background-color: var(--secondary);
+}
+
 
 .section {
   display: flex;
@@ -43,6 +106,20 @@ body {
   gap: 10px;
   margin-top: 30px;
 }
+
+header {
+  position: fixed;
+  top: 0;
+  align-items: center;
+  width: 100%;
+  z-index: 2;
+}
+
+.visited,
+a:hover {
+  color: var(--primary);
+}
+
 
 header .top-content {
   display: none;
@@ -82,15 +159,7 @@ header .toolBar nav {
 }
 
 header .toolBar .compain-btn {
-  margin-left: 50px;
-  border: 4px solid #ec5242;
-  color: #ec5242;
-  padding: 5px 15px;
-  font-weight: 300;
-  height: 50%;
   display: none;
-  text-align: center;
-  cursor: pointer;
 }
 
 @media screen and (min-width: 768px) {
@@ -110,8 +179,11 @@ header .toolBar .compain-btn {
   }
 
   header .toolBar {
+    display: flex;
     justify-content: space-between;
-    padding: 0 150px;
+    align-items: center;
+    min-height: 3rem;
+    padding: 0 10%;
   }
 
   header .toolBar a {
@@ -141,6 +213,7 @@ header .toolBar .compain-btn {
     cursor: pointer;
     text-decoration: none;
     color: #272a31;
+    font-weight: 700;
   }
 
   header .toolBar nav .nav-item .about-link {
@@ -154,6 +227,13 @@ header .toolBar .compain-btn {
 
   header .toolBar .compain-btn {
     display: block;
+    border: 3px solid var(--primary);
+    box-sizing: border-box;
+    padding: 0.25rem 0.5rem;
+    color: #f51d1d;
+    font-size: 1rem;
+    text-align: center;
+    cursor: pointer;
   }
 }
 
@@ -231,25 +311,28 @@ header .toolBar .compain-btn {
   gap: 50px;
 }
 
-.hero div {
+.hero .main-header {
+  padding-top: 3rem;
   text-align: start;
-}
-
-.hero span,
-.hero h1 {
-  color: #ec5242;
+  width: 100%;
 }
 
 .hero span {
   font-weight: 400;
-  font-size: 18px;
+  font-size: 20px;
+  color: #ec5242;
 }
 
 .hero h1 {
   font-family: COCOGOOSE, sans-serif;
-  margin-top: 10px;
-  font-size: 30px;
-  font-weight: 900;
+    margin-top: 1rem;
+    font-size: 35px;
+    font-weight: 800;
+    line-height: 45px;
+    color: #ec5242;
+    background-image: url("../assets/orange.jpeg");
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
 }
 
 .hero .home-care-inner {
@@ -434,20 +517,20 @@ header .toolBar .compain-btn {
   gap: 40px;
   overflow: hidden;
   max-height: 350px;
+  
 }
 
 .doctors .doctor-item {
   display: flex;
   justify-content: center;
-  align-items: center;
   width: 100%;
-  font-weight: 400;
+  font-weight: 300;
   max-height: 200px;
 }
 
 .doctors .doctor-item .doctor-item-img {
   width: 120px;
-  height: 150px;
+  height: 6.25rem;
   object-fit: cover;
   margin-right: 10px;
 }
@@ -480,6 +563,8 @@ header .toolBar .compain-btn {
 @media screen and (min-width: 768px) {
   .doctors .doctors-content {
     max-height: 700px;
+    line-height: 1.125rem;
+  font-size: 0.875rem;
   }
 
   .doctors .doctor-item {

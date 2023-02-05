@@ -14,7 +14,18 @@ $lato: lato, sans-serif;
 body {
   font-family: $lato;
   font-style: normal;
-  font-weight: 100;
+  position: relative;
+  background-color: #f7f7f9;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-weight: normal;
+
+}
+
+@font-face {
+  font-family: cocogoose;
+  src: url(../fonts/Cocogoose.otf);
+  font-weight: bold;
 }
 
 @mixin flex-column {
@@ -28,6 +39,10 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.ff-2 {
+  font-family: "Cocogoose", sans-serif;
 }
 
 .section {
