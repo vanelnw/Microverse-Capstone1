@@ -8,7 +8,6 @@
   --color-white: #fff;
 }
 
-
 * {
   box-sizing: border-box;
   margin: 0;
@@ -18,9 +17,8 @@
 body {
   font-family: "Lato", sans-serif;
   font-style: normal;
-  font-style: normal;
   position: relative;
-  background-color: #f7f7f9;
+  background-color: var(--background);
   font-size: 1rem;
   line-height: 1.5rem;
   font-weight: normal;
@@ -32,57 +30,29 @@ body {
   font-weight: bold;
 }
 
-.ff-2 {
-  font-family: "Cocogoose", sans-serif;
-}
-
-.bg {
-  background-color: var(--background);
-}
-
-.color-tertiary {
-  color: var(--tertiary);
-}
-
-.color-primary {
-  color: var(--primary);
-}
-
-.color-secondry {
-  color: var(--secondary);
-}
-
-.bg-primary {
-  background-color: var(--primary);
-}
-
-.color-white-text {
-  color: var(--color-white);
-}
-
-.bg-white {
-  background-color: var(--color-white);
-}
-
-.color-dark-text {
-  color: var(--dark-text);
-}
-
-.bg-dark {
-  background-color: var(--secondary);
-}
-
-
-.section {
+.section,
+.content,
+.nav-bar,
+.navigation,
+.hero,
+.home-care-inner,
+.program-item,
+.program-item-img,
+.more-btn,
+.partner-content,
+.footer {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.section {
+  flex-direction: column;
   gap: 30px;
 }
 
 .section .title {
-  color: #fff;
+  color: var(--color-white);
   position: relative;
   font-weight: 700;
 }
@@ -91,17 +61,14 @@ body {
   content: "";
   height: 2px;
   width: 40px;
-  background-color: #ec5242;
-  color: #fff;
+  background-color: var(--primary);
+  color: var(--color-white);
   position: absolute;
   top: 40px;
   left: 10%;
 }
 
 .section .content {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   flex-wrap: wrap;
   gap: 10px;
   margin-top: 30px;
@@ -120,7 +87,6 @@ a:hover {
   color: var(--primary);
 }
 
-
 header .top-content {
   display: none;
 }
@@ -131,7 +97,7 @@ header .toolBar {
   justify-content: space-between;
   width: 100%;
   padding: 5px 0;
-  background-color: #fff;
+  background-color: var(--bg-white);
 }
 
 header .toolBar a {
@@ -154,10 +120,6 @@ header .toolBar .mobile-menu {
   cursor: pointer;
 }
 
-header .toolBar nav {
-  display: none;
-}
-
 header .toolBar .compain-btn {
   display: none;
 }
@@ -170,8 +132,8 @@ header .toolBar .compain-btn {
     padding: 5px 50px;
     font-size: 12px;
     gap: 20px;
-    color: #fff;
-    background-color: #272a31;
+    color: var(--color-white);
+    background-color: var(--secondary);
   }
 
   header .top-content > * {
@@ -194,16 +156,7 @@ header .toolBar .compain-btn {
     display: none;
   }
 
-  header .toolBar nav {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
   header .toolBar nav ul {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     font-weight: 300;
     list-style-type: none;
     gap: 30px;
@@ -212,17 +165,17 @@ header .toolBar .compain-btn {
   header .toolBar nav .nav-item a {
     cursor: pointer;
     text-decoration: none;
-    color: #272a31;
+    color: var(--secondary);
     font-weight: 700;
   }
 
   header .toolBar nav .nav-item .about-link {
-    color: #ec5242;
+    color: var(--primary);
   }
 
   header .toolBar nav .nav-item a:hover,
   header .toolBar nav .nav-item a:active {
-    color: #ec5242;
+    color: var(--primary);
   }
 
   header .toolBar .compain-btn {
@@ -230,7 +183,7 @@ header .toolBar .compain-btn {
     border: 3px solid var(--primary);
     box-sizing: border-box;
     padding: 0.25rem 0.5rem;
-    color: #f51d1d;
+    color: var(--primary);
     font-size: 1rem;
     text-align: center;
     cursor: pointer;
@@ -259,10 +212,7 @@ header .toolBar .compain-btn {
   }
 
   header .toolBar nav ul {
-    display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
     width: 100%;
     height: 100%;
     padding: 15px;
@@ -272,17 +222,17 @@ header .toolBar .compain-btn {
   header .toolBar nav .nav-item {
     width: 100%;
     padding: 15px 0;
-    border-bottom: 1px solid #d3d3d3;
+    border-bottom: 1px solid var(--tertiary);
   }
 
   header .toolBar nav .nav-item a {
     cursor: pointer;
     text-decoration: none;
-    color: #fff;
+    color: var(--color-white);
   }
 
   header .toolBar nav .nav-item .about-link {
-    color: #ec5242;
+    color: var(--primary);
   }
 
   header .toolBar nav .close-menu {
@@ -298,21 +248,18 @@ header .toolBar .compain-btn {
 }
 
 .hero {
-  display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
   width: 100%;
-  height: 90vh;
+  height: 85vh;
   background-image: url("../assets/bg2.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   padding: 0 3%;
   gap: 50px;
+  margin-top: 100px;
 }
 
 .hero .main-header {
-  padding-top: 3rem;
   text-align: start;
   width: 100%;
 }
@@ -320,30 +267,27 @@ header .toolBar .compain-btn {
 .hero span {
   font-weight: 400;
   font-size: 20px;
-  color: #ec5242;
+  color: var(--primary);
 }
 
 .hero h1 {
   font-family: COCOGOOSE, sans-serif;
-    margin-top: 1rem;
-    font-size: 35px;
-    font-weight: 800;
-    line-height: 45px;
-    color: #ec5242;
-    background-image: url("../assets/orange.jpeg");
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
+  margin-top: 1rem;
+  font-size: 30px;
+  font-weight: 800;
+  line-height: 40px;
+  color: var(--primary);
+  background-image: url("../assets/orange.jpeg");
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
 }
 
 .hero .home-care-inner {
-  display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
   font-weight: 300;
   width: 100%;
   position: relative;
-  gap: 50px;
+  gap: 20px;
   z-index: 0;
 }
 
@@ -362,7 +306,7 @@ header .toolBar .compain-btn {
 }
 
 .hero .home-care-inner .we-care {
-  padding: 20px;
+  padding: 10px;
   text-align: center;
 }
 
@@ -391,18 +335,18 @@ header .toolBar .compain-btn {
 }
 
 .hero .home-care-bottom {
-  border: 5px solid #fff;
+  border: 5px solid var(--color-white);
   background-color: #d3d3d3;
-  color: #272a31;
+  color: var(--secondary);
   font-weight: 500;
-  padding: 20px 30px;
+  padding: 10px 10px;
   position: relative;
 }
 
 .hero .home-care-bottom p {
   padding: 10px 20px;
   background-color: green;
-  color: #fff;
+  color: var(--color-white);
   border-radius: 30px;
   text-align: center;
   position: absolute;
@@ -419,15 +363,27 @@ header .toolBar .compain-btn {
     font-size: 40px;
   }
 
+  .hero .home-care-inner {
+    gap: 50px;
+  }
+
   .hero .home-care-inner .home-care-top {
     width: 50%;
+  }
+
+  .hero .home-care-bottom {
+    padding: 20px 30px;
+  }
+
+  .hero .home-care-inner .we-care {
+    padding: 20px;
   }
 }
 
 .program {
   background-image: url("../assets/pattern_bg.png");
   background-repeat: repeat;
-  background-color: #272a31;
+  background-color: var(--secondary);
   padding: 40px 15px;
 }
 
@@ -437,9 +393,6 @@ header .toolBar .compain-btn {
 }
 
 .program .program-item {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   font-weight: 300;
   padding: 10px;
   gap: 30px;
@@ -449,9 +402,6 @@ header .toolBar .compain-btn {
 }
 
 .program .program-item .program-item-img {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   gap: 25px;
   flex: 1;
   text-align: center;
@@ -464,27 +414,27 @@ header .toolBar .compain-btn {
 }
 
 .program .program-item .program-item-img .program-item-speciality {
-  color: #ec5242;
+  color: var(--primary);
 }
 
 .program .program-item .program-item-text {
   flex: 2;
-  color: #fff;
+  color: var(--color-white);
   text-align: justify;
 }
 
 .program .program-item:hover {
-  border: 2px solid #fff;
+  border: 2px solid var(--color-white);
 }
 
 .program .program-join {
   display: block;
   width: fit-content;
   font-weight: 400;
-  background-color: #ec5242;
+  background-color: var(--primary);
   margin-bottom: 2px;
   padding: 15px 20px;
-  color: #fff;
+  color: var(--color-white);
   cursor: pointer;
 }
 
@@ -517,7 +467,6 @@ header .toolBar .compain-btn {
   gap: 40px;
   overflow: hidden;
   max-height: 350px;
-  
 }
 
 .doctors .doctor-item {
@@ -536,7 +485,7 @@ header .toolBar .compain-btn {
 }
 
 .doctors .doctor-organize {
-  color: #ec5242;
+  color: var(--primary);
   margin-top: 10px;
 }
 
@@ -546,12 +495,9 @@ header .toolBar .compain-btn {
 }
 
 .doctors .more-btn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   width: 100%;
   padding: 15px 0;
-  border: 1px solid #d3d3d3;
+  border: 1px solid var(--tertiary);
   margin-top: 30px;
   cursor: pointer;
 }
@@ -564,7 +510,7 @@ header .toolBar .compain-btn {
   .doctors .doctors-content {
     max-height: 700px;
     line-height: 1.125rem;
-  font-size: 0.875rem;
+    font-size: 0.875rem;
   }
 
   .doctors .doctor-item {
@@ -578,12 +524,12 @@ header .toolBar .compain-btn {
 
 .partners {
   padding: 40px 15px;
-  background-color: #272a31;
+  background-color: var(--secondary);
   gap: 10px;
 }
 
 .partners .partner-title {
-  color: #fff;
+  color: var(--color-white);
 }
 
 .partners .partner-title > span::after {
@@ -591,9 +537,6 @@ header .toolBar .compain-btn {
 }
 
 .partners .partner-content {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   flex-wrap: wrap;
   gap: 30px;
 }
@@ -628,7 +571,5 @@ header .toolBar .compain-btn {
 @media screen and (min-width: 768px) {
   .footer {
     display: flex;
-    justify-content: center;
-    align-items: center;
   }
 }
