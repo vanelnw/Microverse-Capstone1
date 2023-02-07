@@ -12,7 +12,7 @@ In this repository, I've created html templates, styling and javascript files in
 
 ## Video Link
 
-https://www.loom.com/share/5b659f0b69e3420084d0c727c94004ba
+[Video Link](https://www.loom.com/share/5b659f0b69e3420084d0c727c94004ba)
 
 ## Live Demo
 
