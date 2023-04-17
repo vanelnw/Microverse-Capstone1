@@ -3,20 +3,16 @@
 # 📗 Table of Contents
 
 - [📗 Table of Contents](#-table-of-contents)
-- [📖 Book my Ride App ](#-car-rental-app-)
-  - [Kanban Board](#kanban-board)
-  - [API Documentation](#api-documentation)
-  - [Frontend](#frontend)
+- [📖 Medical Appointment ](#-medical-appointment-)
   - [🛠 Built With ](#-built-with-)
     - [Tech Stack ](#tech-stack-)
     - [Key Features ](#key-features-)
   - [🚀 Live Demo ](#-live-demo-)
   - [💻 Getting Started ](#-getting-started-)
     - [Prerequisites](#prerequisites)
+    - [Setup](#setup)
     - [Install](#install)
     - [Usage](#usage)
-    - [Run tests](#run-tests)
-    - [Deployment](#deployment)
   - [👥 Authors ](#-authors-)
   - [🔭 Future Features ](#-future-features-)
   - [🤝 Contributing ](#-contributing-)
@@ -65,8 +61,8 @@ To get a local copy up and running, follow these steps.
 In order to run this project you need:
 
 ```sh
- - IDE to edit and run the code (We use Visual Studio Code 🔥).
-- Git to versionning your work.
+  IDE to edit and run the code (We use Visual Studio Code 🔥).
+  Git to versionning your work.
 ```
 
 ### Setup
@@ -77,23 +73,16 @@ Clone this repository to your desired folder:
   cd my-folder
   git clone https://github.com/vanelnw/Microverse-Capstone1.git
 ```
-
+### Install
 ```sh
- Finally, run diplay the index.html file in your local browser, or also, you can use Live Server in Visual Studio Code.
+  cd Microverse-Capstone1
+  npm install
 ```
 
 ### Usage
 
 - For anyone who wants to practice html5, css3 or/and javascript
 - For anyone who wants to create his own Website.
-
-### Run tests
-
-To run tests, run the following command:
-
-```sh
-  rspec
-```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -131,9 +120,7 @@ If you like this project consider giving it a star ⭐️.
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-- Hat tip to anyone whose code was used
-- Inspiration
-- Microverse program
+Original design idea by [Cindy Shin in Behance](https://www.behance.net/adagio07).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
