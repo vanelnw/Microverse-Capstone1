@@ -37,7 +37,7 @@
   background-size: cover;
   gap: 30px;
   padding: 5px;
-  margin-top: 100px;
+  /* margin-top: 100px; */
 }
 
 .about .about-titles {
@@ -90,7 +90,7 @@
 }
 
 .about-logo {
-  padding: 30px 15px;
+  padding: 50px 15px;
   text-align: center;
 }
 
@@ -108,18 +108,19 @@
   background-color: var(--color-white);
   border: 1px solid var(--tertiary);
   padding: 15px 0;
-  width: 60%;
+  width: 50%;
+  height: 50%;
 }
 
 .about-logo .logo img {
-  width: 20%;
-  height: 20%;
+  width: 200px;
+  height: 200px;
   align-self: center;
   object-fit: contain;
 }
 
 .about-past {
-  padding: 30px 15px;
+  padding: 50px 15px;
   text-align: center;
 }
 
