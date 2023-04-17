@@ -68,7 +68,7 @@ document.addEventListener('click', (event) => {
   }
 });
 
-navLinks.forEach(link => {
+navLinks.forEach((link) => {
   if (link.pathname === window.location.pathname) {
     link.parentElement.classList.add('active');
   }
