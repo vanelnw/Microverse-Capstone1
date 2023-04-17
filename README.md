@@ -1,76 +1,131 @@
 # Microverse-Capstone1
 
-In this repository, I've created html templates, styling and javascript files in order to built a Capstone project, which is an Medical Apointment website.
+# 📗 Table of Contents
 
-## Built With
+- [📗 Table of Contents](#-table-of-contents)
+- [📖 Medical Appointment ](#-medical-appointment-)
+  - [🛠 Built With ](#-built-with-)
+    - [Tech Stack ](#tech-stack-)
+    - [Key Features ](#key-features-)
+  - [🚀 Live Demo ](#-live-demo-)
+  - [💻 Getting Started ](#-getting-started-)
+    - [Prerequisites](#prerequisites)
+    - [Setup](#setup)
+    - [Install](#install)
+    - [Usage](#usage)
+  - [👥 Authors ](#-authors-)
+  - [🔭 Future Features ](#-future-features-)
+  - [🤝 Contributing ](#-contributing-)
+  - [⭐️ Show your support ](#️-show-your-support-)
+  - [🙏 Acknowledgments ](#-acknowledgments-)
+  - [📝 License ](#-license-)
 
-- Html
-- Css
-- Sass
-- javascript
-- Git & Github
+# 📖 Medical <a name="about-project"></a>
 
-## Video Link
+**Medical** is a html templates, styling and javascript files in order to built a Capstone project, which is an Medical Apointment website.
 
-[Video Link](https://www.loom.com/share/5b659f0b69e3420084d0c727c94004ba)
+## 🛠 Built With <a name="built-with"></a>
 
-## Live Demo
+### Tech Stack <a name="tech-stack"></a>
+
+<details>
+  <summary>Stack</summary>
+  <ul>
+     <li><a>Html</a></li>
+     <li><a>Css</a></li>
+     <li><a>javascript</a></li>
+     <li><a>Git & Github</a></li>
+  </ul>
+</details>
+
+### Key Features <a name="key-features"></a>
+
+- **List doctors**
+- **List Departments and services**
+- **Make an apointment**
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## 🚀 Live Demo <a name="live-demo"></a>
 
 [Live Demo Link](https://vanelnw.github.io/Microverse-Capstone1/)
 
-### Install
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-To get a local copy up and running follow these simple example steps.
+## 💻 Getting Started <a name="getting-started"></a>
 
-- Open terminal
-- Clone this project by the command:
-
-$ git clone https://github.com/vanelnw/Microverse-Capstone1.git
-
-- Then go to the main folder using the next command:
-
-$ cd Microverse-Capstone1
-
-- Finally, run diplay the index.html file in your local browser, or also, you can use Live Server in Visual Studio Code.
+To get a local copy up and running, follow these steps.
 
 ### Prerequisites
 
-- IDE to edit and run the code (We use Visual Studio Code 🔥).
-- Git to versionning your work.
+In order to run this project you need:
+
+```sh
+  IDE to edit and run the code (We use Visual Studio Code 🔥).
+  Git to versionning your work.
+```
+
+### Setup
+
+Clone this repository to your desired folder:
+
+```sh
+  cd my-folder
+  git clone https://github.com/vanelnw/Microverse-Capstone1.git
+```
+### Install
+```sh
+  cd Microverse-Capstone1
+  npm install
+```
 
 ### Usage
 
 - For anyone who wants to practice html5, css3 or/and javascript
 - For anyone who wants to create his own Website.
 
-## Authors
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-👤 **Nwaba Vanel**
+## 👥 Authors <a name="authors"></a>
+
+👤 **Vanel Nwaba**
 
 - GitHub: [@vanelnw](https://github.com/vanelnw)
-- LinkedIn: [@va-nw](https://www.linkedin.com/in/va-nw)
+- LinkedIn: [Vanel Nwaba](https://www.linkedin.com/in/va-nw/)
+- Twitter: [@vanelnw](#)
 
-## 🤝 Contributing
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## 🔭 Future Features <a name="future-features"></a>
+
+- [ ] **Implement the reservation functionality**
+- [ ] **Add authentification**
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## 🤝 Contributing <a name="contributing"></a>
 
 Contributions, issues, and feature requests are welcome!
 
 Feel free to check the [issues page](../../issues/).
 
-## Contributors ✨
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-Thanks go to this wonderful person, [Cindy Shin in Behance](https://www.behance.net/adagio07) who create the ooriginal design of this project.
+## ⭐️ Show your support <a name="support"></a>
 
-## Show your support
+If you like this project consider giving it a star ⭐️.
 
-Give a ⭐️ if you like this project!
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## Acknowledgments
+## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-- Hat tip to anyone whose code was used
-- Inspiration
-- Microverse program
-- My family's support
+Original design idea by [Cindy Shin in Behance](https://www.behance.net/adagio07).
 
-## 📝 License
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## 📝 License <a name="license"></a>
 
 This project is [MIT](./LICENSE) licensed.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>

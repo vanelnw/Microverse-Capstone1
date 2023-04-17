@@ -4,7 +4,7 @@ const doctors = [
     name: 'Dr.Tom Stewart',
     organization: 'Leading Neurologist',
     description:
-      'Focusing on a collaborative approach in a networked environment, he created the concept of co-production based on sharing, such as open source software and Wikipedia.',
+      'Focusing on a collaborative approach in a networked environment, he created the concept of co-production based on sharing,.',
   },
   {
     image: './assets/doctor3.jpg',
@@ -26,7 +26,7 @@ const doctors = [
     name: 'Dr. Sarah Snow',
     organization: 'Pediatrician',
     description:
-      'Layla Tretikov is the general secretary of the Wikimedia Foundation, a non-profit organization that runs Wikipedia. Wikipedia is provided free of charge in 290 languages ​.',
+    'She led open source projects at the Mozilla Foundation and joined CC as CEO in 2014. He has been active in open movements.',
   },
   {
     image: './assets/doctor4.jpg',
@@ -41,16 +41,17 @@ const doctors = [
     name: 'Dr. Sandra Wok',
     organization: 'Gynicologist',
     description:
-      'He led open source projects at the Mozilla Foundation and joined CC as CEO in 2014. He has been active in open movements such as open government and open source.',
+      'Layla Tretikov is the general secretary of the Wikimedia Foundation, a non-profit organization that runs Wikipedia. Wikipedia is provided free of charge in 290 languages ​.',
   },
 ];
 
-const closeMenuButton = document.querySelector('.close-menu');
-const nav = document.querySelector('nav');
-const burgerMenuButton = document.querySelector('.mobile-menu');
+const closeMenuButton = document.querySelector('.mobile-menu-close');
+const nav = document.querySelector('.nav-bar');
+const navLinks = document.querySelectorAll('.nav-item a');
+const burgerMenuButton = document.querySelector('.mobile-menu-toggle');
 
 function toggleMenu() {
-  nav.classList.toggle('nav-show');
+  nav.classList.toggle('active');
 }
 
 if (burgerMenuButton) {
@@ -67,14 +68,22 @@ document.addEventListener('click', (event) => {
   }
 });
 
-const doctorsSection = document.querySelector('.doctors');
+navLinks.forEach((link) => {
+  if (link.pathname === window.location.pathname) {
+    link.parentElement.classList.add('active');
+  }
+});
 
+const doctorsSection = document.querySelector('.doctors');
 const doctorsSectionTitle = document.createElement('div');
-doctorsSectionTitle.classList.add('title', 'doctors-title');
-doctorsSectionTitle.innerHTML = '<span>Our doctors</span>';
+doctorsSectionTitle.classList.add('doctors-title');
+doctorsSectionTitle.innerHTML = '<span class="section-title">Our doctors</span> <span class="line"></span>';
 
 const doctorsSectionContent = document.createElement('div');
 doctorsSectionContent.classList.add('content', 'doctors-content');
+
+let displayedDoctors = window.innerWidth >= 768 ? doctors.lengthn : 2;
+let startDoctorToAdd = 0;
 
 function createDoctorItem(doctor) {
   const doctorItem = document.createElement('div');
@@ -95,7 +104,7 @@ function appendDoctorItems(doctors) {
   if (!Array.isArray(doctors) || !doctors.length) {
     return;
   }
-  doctors.forEach((doctor) => {
+  doctors.slice(startDoctorToAdd, displayedDoctors).forEach((doctor) => {
     const doctorItem = createDoctorItem(doctor);
     doctorsSectionContent.append(doctorItem);
   });
@@ -108,14 +117,29 @@ moreButton.setAttribute('class', 'more-btn');
 moreButton.innerText = 'more';
 
 moreButton.addEventListener('click', () => {
-  const content = document.querySelector('.doctors-content');
-  const h = content.offsetHeight;
-  doctorsSectionContent.style.maxHeight = `${h * 2}px`;
-
-  if (content.offsetHeight >= 1100) {
+  startDoctorToAdd = displayedDoctors;
+  displayedDoctors += 2;
+  appendDoctorItems(doctors);
+  if (displayedDoctors >= doctors.length) {
     moreButton.classList.add('more-btn-none');
   }
 });
+
+function handleResize() {
+  if (window.innerWidth >= 768) {
+    displayedDoctors = doctors.length;
+    doctorsSectionContent.innerHTML = '';
+    appendDoctorItems(doctors);
+    moreButton.classList.add('more-btn-none');
+  } else {
+    displayedDoctors = 2;
+    doctorsSectionContent.innerHTML = '';
+    appendDoctorItems(doctors);
+    moreButton.classList.remove('more-btn-none');
+  }
+}
+
+window.addEventListener('resize', handleResize);
 
 doctorsSection.append(doctorsSectionTitle);
 doctorsSection.append(doctorsSectionContent);

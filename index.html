@@ -16,140 +16,138 @@
   </head>
   <body>
     <header>
-      <div class="top-content small-nav bg-dark color-white-text ">
-        <img src="./assets/facebook.png" alt="facebook" />
-        <img src="./assets/twitter.png" alt="twitter" />
-        <span>Logout</span>
-        <span>MyPage</span>
-        <span>Korean</span>
-      </div>
-      <div class="toolBar">
-        <a href="./index.html"
-          ><img class="logo" src="./assets/medical-logo.png" alt="logo"
-        /></a>
-        <div class="toogle">
-          <img
-            class="mobile-menu"
-            src="./assets/mobile_menu.png"
-            alt="mobile menu"
-          />
-        </div>
+      <nav class="top-nav">
+        <ul class="navigation-links">
+          <li><img src="./assets/facebook.png" alt="Facebook" /></li>
+          <li><img src="./assets/twitter.png" alt="Twitter" /></li>
+          <li><a href="#">Logout</a></li>
+          <li><a href="#">MyPage</a></li>
+          <li><a href="#">Korean</a></li>
+        </ul>
+      </nav>
+      <div class="toolbar">
+        <a href="index.html"><img class="logo" src="./assets/medical-logo.png" alt="Logo" /></a>
+        <button class="mobile-menu-toggle"><img src="./assets/mobile_menu.png" alt="Mobile menu" class="toogle" /></button>
         <nav class="nav-bar">
           <ul class="navigation">
-            <li class="nav-item"><a href="./html/about.html">About</a></li>
-            <li class="nav-item"><a>Program</a></li>
-            <li class="nav-item"><a>Join</a></li>
-            <li class="nav-item"><a>Sponsor</a></li>
-            <li class="nav-item"><a>News</a></li>
+            <li class="nav-item"><a href="about.html">About</a></li>
+            <li class="nav-item"><span>Program</span></li>
+            <li class="nav-item"><span>Join</span></li>
+            <li class="nav-item"><span>Sponsor</span></li>
+            <li class="nav-item"><span>News</span></li>
           </ul>
-          <img
-            class="close-menu"
-            src="./assets/close_mobile_menu.png"
-            alt="close"
-          />
+          <button class="mobile-menu-close"><img src="./assets/close_mobile_menu.png" alt="Close" /></button>
+          <a class="appointment-btn" href="#">Make an Appointment</a>
         </nav>
-        <a class="compain-btn">Make an Appointment</a>
       </div>
     </header>
 
     <main>
-      <section class="hero">
-        
+      <section class="home">
         <div class="main-header">
-          <span>"Hello! we are a private medical clinic"</span>
-          <h1>PROFESSIONAL MEDICAL CARE FOR YOUR ENTIRE FAMILY</h1>
+          <h2 class="subtitle">Hello! We are a private medical clinic</h2>
+          <h1 class="title">Professional Medical Care for Your Entire Family</h1>
         </div>
-
-        <div class="home-care-inner">
-          <div class="home-care-bottom">
-            <p>Open 24 Hrs</p>
-            if you do not have health insurance or cannot pay the fee,you can
-            still get the services. Health insurance and billing practices vary
-            by clinic type and may depend on the patient's age, family size and
-            income.
-          </div>
-
+        
+        <div class="home-care">
           <div class="home-care-top">
-            <img class="quote1" src="./assets/quote1.png" />
+            <p class="home-care-time">Open 24/7</p>
+            <p class="home-care-text">We offer affordable healthcare services to everyone, regardless of insurance or ability to pay. Our billing practices are transparent and based on your needs.If you do not have health insurance or cannot pay the fee,you can
+              still get the services. Health insurance and billing practices vary
+              by clinic type and may depend on the patient's age, family size and
+              income.</p>
+          </div>
+      
+          <div class="home-care-bottom">
+            <img class="quote1" src="./assets/quote1.png" alt="quote-start">
             <div class="we-care">
-              <h2>WE CARE</h2>
-              <h4>ABOUT YOUR</h4>
-              <h6>HEALTH</h6>
+              <h2 class="we-care-title">We Care</h2>
+              <h4 class="we-care-subtitle">About Your Health</h4>
             </div>
-            <img class="quote2" src="./assets/quote2.png" />
+            <img class="quote2" src="./assets/quote2.png" alt="quote-end">
           </div>
         </div>
       </section>
 
       <section class="section program">
-        <div class="title program-title">
-          <span>Our Department & Services</span>
-        </div>
-        <div class="content program-content">
-          <div class="program-item">
-            <div class="program-item-img">
-              <img src="./assets/service1.png" alt="program1" />
+        <div class="program-container">
+          <div class="program-heading">
+            <h2 class="program-title">Our Department & Services</h2>
+            <span class="line"></span>
+          </div>
+          <div class="program-grid">
+            <div class="program-item">
+              <div class="program-item-img">
+                <img src="./assets/service1.png" alt="Traumatology" />
+              </div>
               <h4 class="program-item-speciality">Traumatology</h4>
+              <p class="program-item-text">
+                Your health is your most important asset. You should entrust it only to the best professionals
+              </p>
             </div>
-
-            <p class="program-item-text">
-              Your health is your most important asset. You should entrust it
-              only to the best professionals
-            </p>
-          </div>
-          <div class="program-item">
-            <div class="program-item-img">
-              <img src="./assets/service2.png" alt="program1" />
+            <div class="program-item">
+              <div class="program-item-img">
+                <img src="./assets/service2.png" alt="Cardiology" />
+              </div>
               <h4 class="program-item-speciality">Cardiology</h4>
+              <p class="program-item-text">
+                Your health is your most important asset. You should entrust it only to the best professionals
+              </p>
             </div>
-
-            <p class="program-item-text">
-              Your health is your most important asset. You should entrust it
-              only to the best professionals
-            </p>
-          </div>
-          <div class="program-item">
-            <div class="program-item-img">
-              <img src="./assets/service3.png" alt="program1" />
-              <h4 class="program-item-speciality">Gynicology</h4>
+            <div class="program-item">
+              <div class="program-item-img">
+                <img src="./assets/service3.png" alt="Gynecology" />
+              </div>
+              <h4 class="program-item-speciality">Gynecology</h4>
+              <p class="program-item-text">
+                Your health is your most important asset. You should entrust it only to the best professionals
+              </p>
             </div>
-
-            <p class="program-item-text">
-              Your health is your most important asset. You should entrust it
-              only to the best professionals
-            </p>
-          </div>
-          <div class="program-item">
-            <div class="program-item-img">
-              <img src="./assets/service4.png" alt="program1" />
+            <div class="program-item">
+              <div class="program-item-img">
+                <img src="./assets/service4.png" alt="Dermatology" />
+              </div>
               <h4 class="program-item-speciality">Dermatology</h4>
+              <p class="program-item-text">
+                Your health is your most important asset. You should entrust it only to the best professionals
+              </p>
             </div>
-
-            <p class="program-item-text">
-              Your health is your most important asset. You should entrust it
-              only to the best professionals
-            </p>
+          </div>
+          <div class="program-cta">
+            <a href="#" class="program-join">MAKE AN APPOINTMENT</a>
           </div>
         </div>
-        <a class="program-join">MAKE AN APPOINTMENT</a>
       </section>
 
-      <section class="section doctors">
-        
-      </section>
+      <section class="section doctors"></section>
 
-      <section class="section partners">
-        <div class="title partner-title"><span>Partner</span></div>
-        <div class="content partner-content">
-          <img class="partner-img" src="./assets/mozilla2.png" alt="mozilla" />
-          <img class="partner-img" src="./assets/google2.png" alt="google" />
-          <img class="partner-img" src="./assets/naver2.png" alt="naver" />
-          <img class="partner-img" src="./assets/kakao2.png" alt="kakao" />
-          <img class="partner-img" src="./assets/airbnb2.png" alt="airbnb" />
+      <section class="partners">
+        <div class="container">
+          <h2 class="section-title">Our Partners</h2>
+          <span class="line"></span>
+          <div class="partners-list">
+            <div class="partner-item">
+              <img class="partner-logo" src="./assets/mozilla2.png" alt="Mozilla" />
+            </div>
+            <div class="partner-item">
+              <img class="partner-logo" src="./assets/google2.png" alt="Google" />
+            </div>
+            <div class="partner-item">
+              <img class="partner-logo" src="./assets/naver2.png" alt="Naver" />
+            </div>
+            <div class="partner-item">
+              <img class="partner-logo" src="./assets/kakao2.png" alt="Kakao" />
+            </div>
+            <div class="partner-item">
+              <img class="partner-logo" src="./assets/airbnb2.png" alt="Airbnb" />
+            </div>
+          </div>
         </div>
       </section>
+      
     </main>
-    <footer class="footer">
+
+     <footer class="footer">
       <div class="footer-img">
         <img class="foot-img" src="./assets/medical-logo.png" alt="" />
       </div>
