@@ -29,7 +29,6 @@
 ### Tech Stack <a name="tech-stack"></a>
 
 <details>
-  <summary>Stack</summary>
   <ul>
      <li><a>Html</a></li>
      <li><a>Css</a></li>
@@ -100,7 +99,7 @@ Clone this repository to your desired folder:
 ## 🔭 Future Features <a name="future-features"></a>
 
 - [ ] **Implement the reservation functionality**
-- [ ] **Add authentification**
+- [ ] **Add user authentification**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
