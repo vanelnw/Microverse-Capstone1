@@ -1,17 +1,3 @@
-::-webkit-scrollbar {
-  width: 6.5px;
-  height: 6.5px;
-}
-
-::-webkit-scrollbar-track {
-  background-color: #e8dfec;
-}
-
-::-webkit-scrollbar-thumb {
-  height: 51.2413%;
-  background-color: hsl(242 88% 56% / 0.8);
-  border-radius: 0 0 10px 10px;
-}
 
 :root {
   --primary: #ec5242;
@@ -39,16 +25,11 @@
 
 body {
   font-family: "Lato", sans-serif;
-  font-family: "Poppins", sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 1.428;
   background-color: #f4f3f3;
   position: relative;
-}
-
-html {
-  scroll-behavior: smooth;
 }
 
 ul {
@@ -94,25 +75,9 @@ a {
   font-family: COCOGOOSE, sans-serif;
   font-size: 1.5rem;
   background-image: url("../assets/orange.jpeg");
+  background-clip: unset;
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
-}
-
-.section .title {
-  color: var(--color-white);
-  position: relative;
-  font-weight: 700;
-}
-
-.section .title > span::after {
-  content: "";
-  height: 2px;
-  width: 40px;
-  background-color: var(--primary);
-  color: var(--color-white);
-  position: absolute;
-  top: 40px;
-  left: 10%;
 }
 
 .section .content {
