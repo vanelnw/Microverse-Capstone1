@@ -1,3 +1,8 @@
+<div align="center">
+  <img src="murple_logo.png" alt="logo" width="140"  height="auto" />
+  <br/>
+</div>
+
 # HEALTH-TECH CONFERENCE 2023
 
 # 📗 Table of Contents
@@ -20,9 +25,9 @@
   - [🙏 Acknowledgments ](#-acknowledgments-)
   - [📝 License ](#-license-)
 
-# 📖 HEALTH-TECH CONFERENCE <a name="about-project"></a>
+# 📖 HEALTH-TECH CONFERENCE 2023<a name="about-project"></a>
 
-**HEALTH-TECH CONFERENCE** is a html templates, styling and javascript files in order to built a Capstone project, which is an Medical Apointment website.
+**HEALTH-TECH CONFERENCE** is the capstone project created by following the design guidlines provided by Microverse. I have personalized its contents by creating a website for JavaScript Conference, named "JSWORLD Conference", which contains all the details about the main program, featured speakers, partners, and the past conferences. It is built with HTML, CSS, and JavaScript.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -40,9 +45,8 @@
 
 ### Key Features <a name="key-features"></a>
 
-- **List sPEAKERS**
-- **List Departments and services**
-- **Reserve a seat**
+- **List Speakers**
+- **Display Program**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
