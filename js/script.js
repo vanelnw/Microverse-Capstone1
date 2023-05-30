@@ -77,7 +77,7 @@ navLinks.forEach((link) => {
 const doctorsSection = document.querySelector('.doctors');
 const doctorsSectionTitle = document.createElement('div');
 doctorsSectionTitle.classList.add('doctors-title');
-doctorsSectionTitle.innerHTML = '<span class="section-title">Our doctors</span> <span class="line"></span>';
+doctorsSectionTitle.innerHTML = '<span class="section-title">Featured Speakers</span> <span class="line"></span>';
 
 const doctorsSectionContent = document.createElement('div');
 doctorsSectionContent.classList.add('content', 'doctors-content');
