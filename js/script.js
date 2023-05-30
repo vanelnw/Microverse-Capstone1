@@ -82,7 +82,7 @@ doctorsSectionTitle.innerHTML = '<span class="section-title">Featured Speakers</
 const doctorsSectionContent = document.createElement('div');
 doctorsSectionContent.classList.add('content', 'doctors-content');
 
-let displayedDoctors = window.innerWidth >= 768 ? doctors.lengthn : 2;
+let displayedDoctors = window.innerWidth >= 768 ? doctors.length : 2;
 let startDoctorToAdd = 0;
 
 function createDoctorItem(doctor) {
