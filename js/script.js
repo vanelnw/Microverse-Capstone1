@@ -114,7 +114,10 @@ appendDoctorItems(doctors);
 
 const moreButton = document.createElement('a');
 moreButton.setAttribute('class', 'more-btn');
-moreButton.innerText = 'more';
+moreButton.innerHTML = `
+  <p>MORE</p> 
+  <img class="down-arrow" src="./assets/icons/down-arrow.png" /> 
+`;
 
 moreButton.addEventListener('click', () => {
   startDoctorToAdd = displayedDoctors;
