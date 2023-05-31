@@ -77,12 +77,12 @@ navLinks.forEach((link) => {
 const doctorsSection = document.querySelector('.doctors');
 const doctorsSectionTitle = document.createElement('div');
 doctorsSectionTitle.classList.add('doctors-title');
-doctorsSectionTitle.innerHTML = '<span class="section-title">Our doctors</span> <span class="line"></span>';
+doctorsSectionTitle.innerHTML = '<span class="section-title">Featured Speakers</span> <span class="line"></span>';
 
 const doctorsSectionContent = document.createElement('div');
 doctorsSectionContent.classList.add('content', 'doctors-content');
 
-let displayedDoctors = window.innerWidth >= 768 ? doctors.lengthn : 2;
+let displayedDoctors = window.innerWidth >= 768 ? doctors.length : 2;
 let startDoctorToAdd = 0;
 
 function createDoctorItem(doctor) {
@@ -114,7 +114,10 @@ appendDoctorItems(doctors);
 
 const moreButton = document.createElement('a');
 moreButton.setAttribute('class', 'more-btn');
-moreButton.innerText = 'more';
+moreButton.innerHTML = `
+  <p>MORE</p> 
+  <img class="down-arrow" src="./assets/icons/down-arrow.png" /> 
+`;
 
 moreButton.addEventListener('click', () => {
   startDoctorToAdd = displayedDoctors;

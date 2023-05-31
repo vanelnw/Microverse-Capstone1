@@ -1,9 +1,13 @@
-# Microverse-Capstone1
+<div align="center">
+  <img src="murple_logo.png" alt="logo" width="140"  height="auto" />
+  <br/>
+</div>
+
+# HEALTH-TECH CONFERENCE 2023
 
 # 📗 Table of Contents
 
-- [📗 Table of Contents](#-table-of-contents)
-- [📖 Medical Appointment ](#-medical-appointment-)
+- [📖 HEALTH-TECH CONFERENCE 2023](#-HEALTH-TECH-CONFERENCE-)
   - [🛠 Built With ](#-built-with-)
     - [Tech Stack ](#tech-stack-)
     - [Key Features ](#key-features-)
@@ -13,6 +17,7 @@
     - [Setup](#setup)
     - [Install](#install)
     - [Usage](#usage)
+    - [Deployment](#deployment)
   - [👥 Authors ](#-authors-)
   - [🔭 Future Features ](#-future-features-)
   - [🤝 Contributing ](#-contributing-)
@@ -20,29 +25,25 @@
   - [🙏 Acknowledgments ](#-acknowledgments-)
   - [📝 License ](#-license-)
 
-# 📖 Medical <a name="about-project"></a>
+# 📖 HEALTH-TECH CONFERENCE 2023<a name="about-project"></a>
 
-**Medical** is a html templates, styling and javascript files in order to built a Capstone project, which is an Medical Apointment website.
+**HEALTH-TECH CONFERENCE** is the capstone project created by following the design guidlines provided by Microverse. I have personalized its contents by creating a website for JavaScript Conference, named "JSWORLD Conference", which contains all the details about the main program, featured speakers, partners, and the past conferences. It is built with HTML, CSS, and JavaScript.
 
 ## 🛠 Built With <a name="built-with"></a>
 
 ### Tech Stack <a name="tech-stack"></a>
 
-<details>
-  <summary>Stack</summary>
   <ul>
      <li><a>Html</a></li>
      <li><a>Css</a></li>
      <li><a>javascript</a></li>
      <li><a>Git & Github</a></li>
   </ul>
-</details>
 
 ### Key Features <a name="key-features"></a>
 
-- **List doctors**
-- **List Departments and services**
-- **Make an apointment**
+- **List Speakers**
+- **Display Program**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -70,9 +71,12 @@ In order to run this project you need:
 Clone this repository to your desired folder:
 
 ```sh
-  cd my-folder
-  git clone https://github.com/vanelnw/Microverse-Capstone1.git
+  - Open your terminal
+  - Navigate to the directory where you want to clone the project.
+  - Clone the project using by running the following command:
+  `git clone https://github.com/vanelnw/Microverse-Capstone1.git`
 ```
+
 ### Install
 ```sh
   cd Microverse-Capstone1
@@ -80,9 +84,18 @@ Clone this repository to your desired folder:
 ```
 
 ### Usage
+To run the project, execute the following options:
 
-- For anyone who wants to practice html5, css3 or/and javascript
-- For anyone who wants to create his own Website.
+```sh
+  - live server
+  - Pasting the HTML file link to the browser
+```
+
+### Deployment
+
+```sh
+  Github pages
+```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -94,13 +107,12 @@ Clone this repository to your desired folder:
 - LinkedIn: [Vanel Nwaba](https://www.linkedin.com/in/va-nw/)
 - Twitter: [@vanelnw](#)
 
-
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **Implement the reservation functionality**
-- [ ] **Add authentification**
+- **Implement the reservation functionality**
+- **Add authentification**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
