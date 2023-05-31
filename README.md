@@ -7,8 +7,7 @@
 
 # 📗 Table of Contents
 
-- [📗 Table of Contents](#-table-of-contents)
-- [📖 HEALTH-TECH CONFERENCE ](#-HEALTH-TECH CONFERENCE-)
+- [📖 HEALTH-TECH CONFERENCE 2023](#-HEALTH-TECH CONFERENCE-)
   - [🛠 Built With ](#-built-with-)
     - [Tech Stack ](#tech-stack-)
     - [Key Features ](#key-features-)
@@ -33,15 +32,12 @@
 
 ### Tech Stack <a name="tech-stack"></a>
 
-<details>
-  <summary>Stack</summary>
   <ul>
      <li><a>Html</a></li>
      <li><a>Css</a></li>
      <li><a>javascript</a></li>
      <li><a>Git & Github</a></li>
   </ul>
-</details>
 
 ### Key Features <a name="key-features"></a>
 
@@ -74,9 +70,12 @@ In order to run this project you need:
 Clone this repository to your desired folder:
 
 ```sh
-  cd my-folder
-  git clone https://github.com/vanelnw/Microverse-Capstone1.git
+  - Open your terminal
+  - Navigate to the directory where you want to clone the project.
+  - Clone the project using by running the following command:
+  `git clone https://github.com/vanelnw/Microverse-Capstone1.git`
 ```
+
 ### Install
 ```sh
   cd Microverse-Capstone1
@@ -85,8 +84,7 @@ Clone this repository to your desired folder:
 
 ### Usage
 
-- For anyone who wants to practice html5, css3 or/and javascript
-- For anyone who wants to create his own Website.
+To run the project, open the inex.html file in the browser or use the live server extension on vsCode
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -98,13 +96,12 @@ Clone this repository to your desired folder:
 - LinkedIn: [Vanel Nwaba](https://www.linkedin.com/in/va-nw/)
 - Twitter: [@vanelnw](#)
 
-
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **Implement the reservation functionality**
-- [ ] **Add authentification**
+- **Implement the reservation functionality**
+- **Add authentification**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
