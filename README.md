@@ -7,7 +7,7 @@
 
 # 📗 Table of Contents
 
-- [📖 HEALTH-TECH CONFERENCE 2023](#-HEALTH-TECH CONFERENCE-)
+- [📖 HEALTH-TECH CONFERENCE 2023](#-HEALTH-TECH-CONFERENCE-)
   - [🛠 Built With ](#-built-with-)
     - [Tech Stack ](#tech-stack-)
     - [Key Features ](#key-features-)
@@ -17,6 +17,7 @@
     - [Setup](#setup)
     - [Install](#install)
     - [Usage](#usage)
+    - [Deployment](#deployment)
   - [👥 Authors ](#-authors-)
   - [🔭 Future Features ](#-future-features-)
   - [🤝 Contributing ](#-contributing-)
@@ -83,8 +84,18 @@ Clone this repository to your desired folder:
 ```
 
 ### Usage
+To run the project, execute the following options:
 
-To run the project, open the inex.html file in the browser or use the live server extension on vsCode
+```sh
+  - live server
+  - Pasting the HTML file link to the browser
+```
+
+### Deployment
+
+```sh
+  Github pages
+```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
