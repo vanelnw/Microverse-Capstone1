@@ -219,6 +219,7 @@ span {
 
   .navigation-links {
     display: flex;
+    padding: 0 20px;
   }
 
   .navigation-links > li {
@@ -324,6 +325,10 @@ span {
   text-transform: uppercase;
 }
 
+.home-description {
+  background-color: rgba(247, 247, 248, 0.9);
+}
+
 .main-header {
   margin-bottom: 1.5rem;
 }
@@ -419,7 +424,6 @@ p.venu {
 
   .home-description {
     border: 4px solid var(--primary-white);
-    background-color: rgba(247, 247, 248, 0.9);
     width: 60%;
   }
 

@@ -1,18 +1,3 @@
-:root {
-  --primary: #ec5242;
-  --secondary: #272a31;
-  --tertiary: #d3d3d3;
-  --background: #f7f7f9;
-  --dark-text: #515151;
-  --bg-white: #fff;
-  --color-white: #fff;
-}
-
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
 
 .speakers {
   display: none;
