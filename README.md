@@ -105,7 +105,7 @@ To run the project, execute the following options:
 
 - GitHub: [@vanelnw](https://github.com/vanelnw)
 - LinkedIn: [Vanel Nwaba](https://www.linkedin.com/in/va-nw/)
-- Twitter: [@vanelnw](#)
+- Twitter: [@vanelNw](https://twitter.com/VanelNw)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
